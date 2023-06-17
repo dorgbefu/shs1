@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note on HTML and CSS for SHS Students</title>
+<style>
+   body {
+      font-family: Times, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #008080;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .subject {
+      margin-bottom: 20px;
+    }
+
+    .subject-title {
+      color: #333;
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .subject-description {
+      color: #666;
+    }
+
+    .subject-link {
+      color: #008080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .subject-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<div class="container">
+<body>
+  <div class="section">
+    <h1 class="section-title">Note on HTML and CSS for SHS Students</h1>
+    <div class="section-content">
+      <p>HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are the fundamental building blocks of web development. HTML is used to structure the content of a web page, while CSS is used to style and visually enhance the presentation of that content. Understanding HTML and CSS is essential for creating attractive and well-structured websites.</p>
+    </div>
+  </div>
+
+  <div class="topic">
+    <h2 class="section-title">Benefits of Learning HTML and CSS:</h2>
+    <div class="section-content">
+      <ol>
+        <li>Creating Web Pages: HTML is used to structure the content of web pages, allowing you to define headings, paragraphs, lists, images, links, and more. CSS adds style and layout to these elements, making your web pages visually appealing.</li>
+        <li>Design and Layout: CSS provides powerful styling capabilities, allowing you to control colors, fonts, spacing, borders, backgrounds, and other visual aspects. With CSS, you can create professional-looking layouts and designs for your web pages.</li>
+        <li>Responsive Design: HTML and CSS enable you to create responsive web pages that adapt and display properly on different devices and screen sizes. This is crucial in the era of mobile and multi-device usage.</li>
+        <li>Code Efficiency: Using HTML and CSS, you can create reusable styles and templates, which helps maintain consistency across multiple web pages and saves development time and effort.</li>
+        <li>Compatibility and Standards: HTML and CSS are industry-standard languages supported by all modern web browsers. Learning HTML and CSS ensures your web pages are compatible across different platforms.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">HTML and CSS Topics Covered in SHS Syllabus:</h2>
+    <div class="section-content">
+      <ol>
+        <li>HTML Basics:
+          <ul>
+            <li>Structure of an HTML document: HTML tags, elements, and attributes.</li>
+            <li>Text formatting: headings, paragraphs, lists, and emphasis.</li>
+            <li>Inserting images and creating hyperlinks.</li>
+            <li>Creating tables for data organization.</li>
+          </ul>
+        </li>
+        <li>CSS Basics:
+          <ul>
+            <li>Understanding CSS syntax and selectors.</li>
+            <li>Applying styles to HTML elements: colors, fonts, backgrounds, and borders.</li>
+            <li>Box model: margins, padding, and borders.</li>
+            <li>Creating page layouts using CSS positioning and floats.</li>
+          </ul>
+        </li>
+        <li>Responsive Web Design:
+          <ul>
+            <li>Media queries: adapting layouts for different devices and screen sizes.</li>
+            <li>Flexbox and grid systems for flexible and responsive designs.</li>
+          </ul>
+        </li>
+        <li>Working with Forms:
+          <ul>
+            <li>Creating input fields, checkboxes, radio buttons, and dropdown menus.</li>
+            <li>Validating form data using HTML attributes and JavaScript.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+   <div class="section-content">
+      <h2>Structure of an HTML Document</h2>
+      <p>An HTML document consists of several elements that define the structure and content of a webpage. The essential components are:</p>
+      <ul>
+        <li><strong>HTML Tags:</strong> HTML tags are used to enclose different elements in a document. They are represented by angle brackets (&lt; and &gt;) and come in pairs: an opening tag and a closing tag. For example, &lt;p&gt; represents a paragraph element, and &lt;/p&gt; represents the closing tag for the paragraph.</li>
+        <li><strong>HTML Elements:</strong> HTML elements are the building blocks of an HTML document. They consist of an opening tag, content, and a closing tag. For instance, the paragraph element can be represented as &lt;p&gt;This is a paragraph.&lt;/p&gt;, where "This is a paragraph." is the content of the paragraph.</li>
+        <li><strong>HTML Attributes:</strong> HTML attributes provide additional information about HTML elements. They are specified within the opening tag and consist of a name and a value. Attributes are used to modify the behavior or appearance of an element. For example, the &lt;img&gt; tag for an image may include attributes like src (source) and alt (alternative text).</li>
+      </ul>
+    </div>
+ 
+      <h2>Text Formatting</h2>
+      <p>HTML allows you to format text using various tags and elements. Some common text formatting elements include:</p>
+      <ul>
+        <li><strong>Headings:</strong> HTML provides six levels of headings, from &lt;h1&gt; to &lt;h6&gt;. Headings are used to indicate the importance and structure of different sections within a document.</li>
+        <li><strong>Paragraphs:</strong> Paragraphs are represented by the &lt;p&gt; tag. They are used to group text into logical blocks and create visual separation between content.</li>
+        <li><strong>Lists:</strong> HTML offers ordered lists (&lt;ol&gt;) and unordered lists (&lt;ul&gt;) for creating numbered and bullet-pointed lists, respectively. List items are defined using the &lt;li&gt; tag.</li>
+        <li><strong>Emphasis:</strong> To emphasize specific text, you can use the &lt;em&gt; or &lt;strong&gt; tags. The &lt;em&gt; tag indicates emphasis, while the &lt;strong&gt; tag denotes stronger emphasis.</li>
+      </ul>
+    
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Inserting Images and Creating Hyperlinks</h2>
+      <p>HTML allows you to insert images and create hyperlinks to navigate between webpages. Here's how:</p>
+      <ul>
+        <li><strong>Images:</strong> To insert an image, use the &lt;img&gt; tag with the "src" attribute specifying the image URL and the "alt" attribute providing alternative text for screen readers and when the image cannot be displayed.</li>
+        <li><strong>Hyperlinks:</strong> Hyperlinks are created using the &lt;a&gt; tag. The "href" attribute defines the destination URL, and the link text is placed between the opening and closing tags. For example, &lt;a href="https://example.com"&gt;Visit Example.com&lt;/a&gt; creates a hyperlink to example.com.</li>
+      </ul>
+  
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Creating Tables for Data Organization</h2>
+      <p>Tables are useful for presenting tabular data in an organized manner. To create a table:</p>
+      <ol>
+        <li>Use the &lt;table&gt; tag to define the table.</li>
+        <li>Inside the &lt;table&gt; tag, use the &lt;tr&gt; tag to define each table row.</li>
+        <li>Within each &lt;tr&gt; tag, use the &lt;td&gt; tag to define each table cell (data cell).</li>
+        <li>You can also use the &lt;th&gt; tag to define table headers (header cells) instead of &lt;td&gt;.</li>
+      </ol>
+      <p>Here's an example of a simple table:</p>
+      <pre>
+        <code>
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Name&lt;/th&gt;
+              &lt;th&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;John&lt;/td&gt;
+              &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Jane&lt;/td&gt;
+              &lt;td&gt;30&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+        </code>
+      </pre>
+    </div>
+  
+  
+  <body>
+  <div class="section">
+    <h1 class="section-title">Note on CSS Basics</h1>
+    <div class="section-content">
+      <h2>Understanding CSS Syntax and Selectors</h2>
+      <p>CSS (Cascading Style Sheets) is used to style and format HTML documents. It consists of rulesets that define how HTML elements should be presented. Some key concepts include:</p>
+      <ul>
+        <li><strong>CSS Syntax:</strong> CSS rulesets are composed of selectors and declarations. Selectors target specific HTML elements, while declarations define the styles to be applied. For example, the following rule changes the color of all paragraphs:
+          <pre>
+            <code>p {
+  color: blue;
+}</code>
+          </pre>
+        </li>
+        <li><strong>CSS Selectors:</strong> Selectors determine which elements the styles will be applied to. They can target elements by their tag name, class, ID, or other attributes. Examples of selectors include element selectors (e.g., `p`, `h1`), class selectors (e.g., `.my-class`), and ID selectors (e.g., `#my-id`).</li>
+      </ul>
+    
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Applying Styles to HTML Elements</h2>
+      <p>CSS allows you to customize the appearance of HTML elements. Some common styles include:</p>
+      <ul>
+        <li><strong>Colors:</strong> You can specify colors using predefined color names, hexadecimal codes, or RGB values. For example, `color: red;` sets the text color to red.</li>
+        <li><strong>Fonts:</strong> CSS provides properties to control font styles, sizes, and families. You can use properties like `font-family`, `font-size`, and `font-weight` to define the desired font for text.</li>
+        <li><strong>Backgrounds:</strong> The `background-color` property sets the background color of an element. You can also use the `background-image` property to add images as backgrounds.</li>
+        <li><strong>Borders:</strong> Borders can be added to elements using the `border` property. You can specify the border width, style, and color.</li>
+      </ul>
+    
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Box Model: Margins, Padding, and Borders</h2>
+      <p>The box model defines how elements are rendered in terms of content, padding, borders, and margins. Understanding the box model is crucial for positioning and spacing elements. Key concepts include:</p>
+      <ul>
+        <li><strong>Margins:</strong> The space outside an element's border. You can control margins using properties like `margin-top`, `margin-bottom`, `margin-left`, and `margin-right`.</li>
+        <li><strong>Padding:</strong> The space between an element's content and its border. Padding can be adjusted using properties like `padding-top`, `padding-bottom`, `padding-left`, and `padding-right`.</li>
+        <li><strong>Borders:</strong> The lines that surround an element's content and padding. You can define borders using properties like `border-width`, `border-style`, and `border-color`.</li>
+      </ul>
+    
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Creating Page Layouts using CSS Positioning and Floats</h2>
+      <p>CSS offers various techniques to create page layouts and control the positioning of elements. Two commonly used methods are:</p>
+      <ul>
+        <li><strong>CSS Positioning:</strong> Positioning allows you to precisely control the placement of elements. Common values for the `position` property include `relative`, `absolute`, and `fixed`.</li>
+        <li><strong>Floats:</strong> Floating elements allows them to be positioned side by side. You can use the `float` property with values like `left` or `right` to achieve this effect.</li>
+      </ul>
+    
+  </div>
+  
+  <div class="section">
+    <h1 class="section-title">Note on Responsive Web Design</h1>
+    <div class="section-content">
+      <h2>Media Queries: Adapting Layouts for Different Devices and Screen Sizes</h2>
+      <p>Responsive web design ensures that websites adapt and display properly on different devices and screen sizes. Key techniques include:</p>
+      <ul>
+        <li><strong>Media Queries:</strong> Media queries allow you to apply different CSS styles based on specific conditions, such as screen width, height, and device orientation. For example, you can use media queries to adjust the layout and font sizes for mobile devices:</li>
+      </ul>
+      <pre><code>@media only screen and (max-width: 600px) {
+  /* CSS styles for mobile devices */
+  /* Adjust layout, font sizes, etc. */
+}</code></pre>
+    
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Flexbox and Grid Systems for Flexible and Responsive Designs</h2>
+      <p>Flexbox and grid systems are powerful tools for creating flexible and responsive layouts. Some key concepts include:</p>
+      <ul>
+        <li><strong>Flexbox:</strong> Flexbox is a CSS layout module that provides a flexible way to arrange and align elements within a container. It allows for dynamic and responsive layouts, making it easier to create responsive designs.</li>
+        <li><strong>Grid Systems:</strong> Grid systems provide a structured approach to layout design by dividing the page into a grid of rows and columns. This allows for precise control over the placement and alignment of elements on the page.</li>
+      </ul>
+    
+  </div>
+
+  <div class="section">
+    <h1 class="section-title">Note on Working with Forms</h1>
+    <div class="section-content">
+      <h2>Creating Input Fields, Checkboxes, Radio Buttons, and Dropdown Menus</h2>
+      <p>HTML provides various form elements to collect user input. Some commonly used form elements include:</p>
+      <ul>
+        <li><strong>Input Fields:</strong> Input fields allow users to enter text, numbers, and other data. HTML provides different types of input fields, such as text fields, email fields, password fields, and more.</li>
+        <li><strong>Checkboxes and Radio Buttons:</strong> Checkboxes and radio buttons allow users to select one or multiple options from a list. Checkboxes are suitable for multiple selections, while radio buttons allow only one selection.</li>
+        <li><strong>Dropdown Menus:</strong> Dropdown menus provide a list of options that users can select from. They are useful for presenting a large number of choices in a compact format.</li>
+      </ul>
+    
+  </div>
+
+  <div class="section">
+    <div class="section-content">
+      <h2>Validating Form Data Using HTML Attributes and JavaScript</h2>
+      <p>Form validation ensures that user-submitted data meets specific requirements. HTML attributes and JavaScript can be used for form validation:</p>
+      <ul>
+        <li><strong>HTML Attributes:</strong> HTML provides built-in form validation attributes, such as `required`, `pattern`, `min`, `max`, and more. These attributes define validation rules that browsers can enforce.</li>
+        <li><strong>JavaScript Validation:</strong> JavaScript can be used for more complex form validation scenarios. By writing custom validation functions, you can perform advanced checks on user input and provide customized error messages.</li>
+      </ul>
+    
+  </div>
+   <title>Simple Process Flow Flowchart Example</title>
+</head>
+<body>
+  <img src="https://i.imgur.com/J1Uz0g8.png" alt="Simple Process Flow Flowchart Example">
+  <div class="section">
+    <h2>Structure of an HTML Document</h2>
+    <p>An HTML document consists of several elements that define the structure and content of a webpage. The essential components are:</p>
+    <pre>
+      <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;Note on HTML Basics&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          <!-- HTML content goes here -->
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </code>
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>Text Formatting</h2>
+    <p>HTML allows you to format text using various tags and elements. Some common text formatting elements include:</p>
+    <pre>
+      <code>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;List item 1&lt;/li&gt;
+          &lt;li&gt;List item 2&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;em&gt;Emphasized text&lt;/em&gt;
+      </code>
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>Inserting Images and Creating Hyperlinks</h2>
+    <p>HTML allows you to insert images and create hyperlinks to navigate between webpages. Here's how:</p>
+    <pre>
+      <code>
+        &lt;img src="image.jpg" alt="Image description"&gt;
+        &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+      </code>
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>Creating a Webpage for Organization</h2>
+    <p>When creating a webpage for organization, you can utilize various HTML elements and techniques to structure and present your content effectively. Here are some key concepts:</p>
+    <pre>
+      <code>
+        &lt;div&gt;This is a division.&lt;/div&gt;
+        &lt;header&gt;This is a header.&lt;/header&gt;
+        &lt;section&gt;This is a section.&lt;/section&gt;
+        &lt;table&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Table header&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Table data&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;form&gt;This is a form.&lt;/form&gt;
+      </code>
+    </pre>
+  </div>
+  
+  <h1>HTML Basics Examples</h1>
+  
+  <h2>Structure of an HTML Document</h2>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a Heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  
+  <h2>Text Formatting</h2>
+  <pre><code>&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text and this is &lt;strong&gt;strong&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
+  
+  <h2>Inserting Images and Creating Hyperlinks</h2>
+  <pre><code>&lt;img src="image.jpg" alt="Image description"&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+  
+  <h2>Creating Webpage for Organization</h2>
+  <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jane&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  
+  <h2>Creating a Form</h2>
+  <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a Heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  
+  <h2>Text Formatting</h2>
+  <pre><code class="html">&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text and this is &lt;strong&gt;strong&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
+  
+  <h2>Inserting Images and Creating Hyperlinks</h2>
+  <pre><code class="html">&lt;img src="image.jpg" alt="Image description"&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+  
+  <h2>Creating Webpage for Organization</h2>
+  <pre><code class="html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jane&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  
+  <h2>Creating a Form</h2>
+  <pre><code class="html">&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+<pre>
+<code>
+&lt;p style=&quot;color: red;&quot;&gt;This is a red paragraph.&lt;/p&gt;
+</code>
+</pre>
+
+
+  <div class="section">
+    <h2 class="section-title">Conclusion:</h2>
+    <div class="section-content">
+      <p>HTML and CSS are essential languages for SHS students to learn as they form the foundation of web development. Mastering HTML allows you to structure web content, while CSS empowers you to create visually appealing and responsive designs. By understanding HTML and CSS, you gain valuable skills to create and customize websites effectively.</p>
+    </div>
+  </div>
+</body>
+</html>

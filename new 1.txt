@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note on QBASIC</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Note on QBASIC for SHS Students</h1>
+
+  <h2>Introduction to QBASIC</h2>
+  <p>
+    QBASIC is a structured programming language that is widely used for learning the basics of computer programming. It provides a simplified syntax and a user-friendly interface, making it suitable for beginners. QBASIC allows students to understand fundamental programming concepts such as variables, loops, conditions, and subroutines, which form the building blocks of programming.
+  </p>
+
+  <h2>Benefits of Learning QBASIC</h2>
+  <ul>
+    <li>Easy to learn: QBASIC uses a simplified syntax that is easy for beginners to understand.</li>
+    <li>Readability: QBASIC emphasizes the use of plain English words and phrases, making the code more readable and easier to comprehend.</li>
+    <li>Instant feedback: QBASIC provides immediate feedback on program execution, allowing students to identify and fix errors quickly.</li>
+    <li>Versatility: QBASIC can be used for various applications, such as mathematical calculations and simple games.</li>
+    <li>Strong foundation: Learning QBASIC helps students develop problem-solving skills and logical thinking, which are essential for computer programming.</li>
+  </ul>
+
+  <h2>QBASIC Topics Covered in WAEC and GES Syllabus</h2>
+  <ol>
+    <li>Introduction to QBASIC</li>
+    <li>QBASIC Basics</li>
+    <li>QBASIC Control Structures</li>
+    <li>Subroutines and Functions</li>
+    <li>Arrays and Data Handling</li>
+    <li>Problem Solving and Debugging</li>
+  </ol>
+
+  <h2>Examples</h2>
+  <p>
+    Here are some examples of QBASIC programs:
+  </p>
+
+  <h3>Example 1: Hello, World!</h3>
+  <pre>
+    <code class="qbasic">
+CLS
+PRINT "Hello, World!"
+END
+    </code>
+  </pre>
+
+  <h3>Example 2: Sum of Two Numbers</h3>
+  <pre>
+    <code class="qbasic">
+CLS
+PRINT "Enter the first number: ";
+INPUT num1
+PRINT "Enter the second number: ";
+INPUT num2
+sum = num1 + num2
+PRINT "The sum is: "; sum
+END
+    </code>
+  </pre>
+
+  <!-- Other examples go here -->
+
+  <h2>Conclusion</h2>
+  <p>
+    QBASIC is an essential programming language for SHS students, aligned with the WAEC and GES syllabus. It provides a solid foundation in programming, enabling students to develop problem-solving skills and logical thinking, which are essential for computer programming. By learning QBASIC, students can prepare themselves for more advanced programming languages and gain a competitive edge in the field of computer science.
+  </p>
+</body>
+</html>
